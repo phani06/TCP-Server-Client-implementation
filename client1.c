@@ -27,5 +27,5 @@ printf("\nError in Reading");
 exit(0);
 }
 else
-{printf("\nMessage Read %s",buff);
+{printf("\nmessage Read %s",buff);
 }}
