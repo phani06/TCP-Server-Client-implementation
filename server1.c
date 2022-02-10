@@ -28,7 +28,7 @@ for(;;)
 {
 len=sizeof(ch);
 conntfd=accept(sockfd,(struct sockaddr*)&cli,&len);
-printf("accepted");
+printf("Accepted");
 tick=time(NULL);
 snprintf(str,sizeof(str),"%s",ctime(&tick));
 printf("%s",str);write(conntfd,str,100);
