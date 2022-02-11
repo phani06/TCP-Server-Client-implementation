@@ -10,7 +10,7 @@ time_t tick;
 sockfd=socket(AF_INET,SOCK_STREAM,0);
 if(sockfd<0)
 {
-printf("error in socket\n");
+printf("error in Socket\n");
 exit(0);
 }
 else printf("socket opened");
@@ -22,7 +22,7 @@ if(bind(sockfd,(struct sockaddr*)&sa,sizeof(sa))<0)
 printf("Error in binding\n");
 }
 else
-printf("Binded successfully");
+printf("Binded Successfully");
 listen(sockfd,50);
 for(;;)
 {
