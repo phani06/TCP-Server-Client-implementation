@@ -13,7 +13,7 @@ if(sockfd<0)
 printf("error in socket\n");
 exit(0);
 }
-else printf("Socket opened");
+else printf("socket opened");
 bzero(&sa,sizeof(sa));
 sa.sin_port=htons(5600);
 sa.sin_addr.s_addr=htonl(0);
@@ -22,7 +22,7 @@ if(bind(sockfd,(struct sockaddr*)&sa,sizeof(sa))<0)
 printf("Error in binding\n");
 }
 else
-printf("Binded Successfully");
+printf("Binded successfully");
 listen(sockfd,50);
 for(;;)
 {
