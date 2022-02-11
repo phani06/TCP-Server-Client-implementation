@@ -10,7 +10,7 @@ sockfd=socket(AF_INET,SOCK_STREAM,0);
 if(sockfd<0){ printf("\nError in Socket");
 exit(0);
 }
-else printf("\nsocket is Opened");
+else printf("\nSocket is Opened");
 bzero(&sa,sizeof(sa));
 sa.sin_family=AF_INET;
 sa.sin_port=htons(5600);
@@ -20,7 +20,7 @@ printf("\nError in connection failed");
 exit(0);
 }
 else
-printf("\nconnected Successfully");
+printf("\nconnected successfully");
 if(n=read(sockfd,buff,sizeof(buff))<0)
 {
 printf("\nError in Reading");
