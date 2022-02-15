@@ -16,11 +16,11 @@ sa.sin_family=AF_INET;
 sa.sin_port=htons(5600);
 if(connect(sockfd,(struct sockaddr*)&sa,sizeof(sa))<0)
 {
-printf("\nError in connection failed");
+printf("\nerror in connection failed");
 exit(0);
 }
 else
-printf("\Connected successfully");
+printf("\connected successfully");
 if(n=read(sockfd,buff,sizeof(buff))<0)
 {
 printf("\nError in Reading");
