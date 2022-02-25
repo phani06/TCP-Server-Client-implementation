@@ -20,7 +20,7 @@ printf("\nerror in connection failed");
 exit(0);
 }
 else
-printf("\Connected Successfully");
+printf("\nConnected Successfully");
 if(n=read(sockfd,buff,sizeof(buff))<0)
 {
 printf("\nError in Reading");
